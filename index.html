@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sushma Yadav | Tech Lead, Python, FastAPI and GenAI Engineer</title>
-<meta name="description" content="Tech Lead with 10 years in full-stack engineering. Builds RAG and vector-search apps with Python, FastAPI and PostgreSQL. Gurugram, India.">
+<title>Sushma Yadav | Tech Lead | Full-Stack | Python & GenAI Engineer</title>
+<meta name="description" content="Tech Lead and Generative AI engineer with 10 years in software engineering. Builds RAG, text-to-SQL, MCP and vector-search apps with Python, FastAPI and PostgreSQL. Gurugram, India.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,12 +12,22 @@
 :root{--bg:#eef1f6;--surface:#fff;--ink:#14181f;--muted:#566073;--line:#d5dbe6;--accent:#2f5bea;--accent-ink:#fff;
 --display:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;--body:"Public Sans","Segoe UI",Arial,sans-serif}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 var(--body)}
 a{color:var(--accent)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
-header.hero{padding:4.5rem 0 2.5rem}
+nav.top{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;align-items:center;gap:1rem;min-height:3.25rem}
+nav.top .name{font:800 1.05rem/1 var(--display);color:var(--ink);text-decoration:none;margin-right:auto}
+nav.top ul{display:flex;flex-wrap:wrap;gap:.3rem 1.1rem;margin:0;padding:0;list-style:none}
+nav.top ul a{color:var(--ink);text-decoration:none;font-weight:600}
+nav.top ul a:hover{color:var(--accent)}
+header.hero{padding:3.5rem 0 2.5rem}
+.intro{display:flex;align-items:center;gap:1.5rem;margin-bottom:1rem}
+.intro img{width:8.5rem;height:8.5rem;border-radius:50%;object-fit:cover;border:4px solid var(--surface);box-shadow:0 0 0 2px var(--accent);flex:none}
+.intro h1{margin:0}
+.role{font:600 clamp(1rem,2.2vw,1.25rem)/1.3 var(--display);color:var(--accent);margin:.5rem 0 0}
 h1{font:800 clamp(2.6rem,8vw,5.2rem)/.98 var(--display);letter-spacing:-.03em;margin:0 0 1rem}
 .lead{font:600 clamp(1.1rem,2.4vw,1.5rem)/1.35 var(--display);max-width:40rem;margin:0 0 1.5rem}
 .btns{display:flex;flex-wrap:wrap;gap:.6rem}
@@ -42,6 +52,9 @@ h2{font:800 1.7rem/1.2 var(--display);letter-spacing:-.01em;margin:0 0 1rem}
 .proj h3{font:800 1.15rem/1.25 var(--display);margin:0 0 .5rem}
 .proj p{margin:0 0 .6rem}
 .proj .stack{margin-top:auto;color:var(--muted);font-size:.88rem}
+.proj .links{margin:.4rem 0 0;font-size:.9rem;font-weight:600}
+.proj .links a{text-decoration:none}
+.proj .links a:hover{text-decoration:underline}
 dl.skills{display:grid;grid-template-columns:minmax(9rem,13rem) 1fr;gap:.6rem 1.25rem;margin:0}
 dl.skills dt{font-weight:600}
 dl.skills dd{margin:0;color:var(--muted)}
@@ -50,16 +63,34 @@ dl.skills dd{margin:0;color:var(--muted)}
 .job ul{margin:0;padding-left:1.2rem}
 .job li{margin-bottom:.35rem}
 footer{padding:2rem 0 3rem;color:var(--muted)}
-@media (max-width:40rem){dl.skills{grid-template-columns:1fr;gap:.1rem}dl.skills dd{margin-bottom:.6rem}}
+@media (max-width:40rem){.intro{flex-direction:column;align-items:flex-start;gap:1rem}.intro img{width:7rem;height:7rem}nav.top .name{display:none}nav.top ul{gap:.3rem .8rem;font-size:.9rem;padding:.5rem 0}dl.skills{grid-template-columns:1fr;gap:.1rem}dl.skills dd{margin-bottom:.6rem}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<div class="wrap">
+<nav class="top" aria-label="Sections">
+  <div class="wrap">
+    <a class="name" href="#top">Sushma Yadav</a>
+    <ul>
+      <li><a href="#work">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#exp">Experience</a></li>
+      <li><a href="#edu">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="wrap" id="top">
 
 <header class="hero">
-  <h1>Sushma Yadav</h1>
-  <p class="lead">Tech Lead building RAG and vector-search apps with Python, FastAPI and PostgreSQL, backed by 10 years of full-stack delivery.</p>
+  <div class="intro">
+    <img src="sushma.jpg" alt="Portrait of Sushma Yadav" width="180" height="180">
+    <div>
+      <h1>Sushma Yadav</h1>
+      <p class="role">Tech Lead | Full-Stack | Python &amp; GenAI Engineer</p>
+    </div>
+  </div>
+  <p class="lead">I build RAG, chatbots, text-to-SQL, MCP and vector-search apps with Python, FastAPI and PostgreSQL, backed by 10 years of software engineering.</p>
   <div class="btns">
     <a class="btn primary" href="Sushma_Yadav_CV.pdf" download>Download CV</a>
     <a class="btn" href="https://www.linkedin.com/in/sushma-yadav/">LinkedIn</a>
@@ -67,7 +98,7 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
     <a class="btn" href="mailto:sylovely609@gmail.com">Email me</a>
   </div>
   <ul class="facts">
-    <li><b>10 years</b>in web engineering</li>
+    <li><b>10 years</b>in software engineering</li>
     <li><b>Team of 5</b>engineers led</li>
     <li><b>100+ modules</b>migrated, zero data loss</li>
     <li><b>1+ year</b>of hands-on GenAI</li>
@@ -78,9 +109,9 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
   <h2 id="find">Search my work</h2>
   <div class="finder">
     <label for="q">What are you hiring for?</label>
-    <input id="q" type="search" placeholder="Try: RAG, FastAPI, AWS, Drupal, SaaS" autocomplete="off">
+    <input id="q" type="search" placeholder="Try: RAG, MCP, text-to-SQL, FastAPI, Drupal" autocomplete="off">
     <div class="chips" aria-label="Quick searches">
-      <button type="button">RAG</button><button type="button">FastAPI</button><button type="button">AWS</button><button type="button">Drupal</button><button type="button">multi-tenant</button>
+      <button type="button">RAG</button><button type="button">chatbot</button><button type="button">MCP</button><button type="button">text-to-SQL</button><button type="button">FastAPI</button><button type="button">Drupal</button><button type="button">multi-tenant</button>
     </div>
     <p id="status" aria-live="polite">Type a skill and the matching projects below move to the front.</p>
   </div>
@@ -89,35 +120,69 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
 <section aria-labelledby="work">
   <h2 id="work">Selected projects</h2>
   <div class="projects" id="projects">
-    <article class="proj" data-tags="rag llm vector embeddings pgvector groq claude semantic search python genai ai">
-      <h3>RAG application (POC)</h3>
-      <p>A question-answering pipeline that retrieves passages by vector similarity and passes them to an LLM, so answers stay grounded in internal content.</p>
-      <p class="stack">Python, pgvector, Groq, Claude API</p>
+    <article class="proj" data-tags="fastapi python postgresql pgvector embeddings vector search ecommerce cross-sell recommendation docker api pydantic openapi swagger ann ai genai">
+      <h3>E-commerce cross-sell vector search (in-house)</h3>
+      <p>Suggests complementary products using semantic search instead of keyword or rule matching. Embeddings of titles, descriptions and attributes live in pgvector, and FastAPI endpoints return the top-N matches by cosine similarity with approximate nearest-neighbour indexing.</p>
+      <p class="stack">Python, FastAPI, Pydantic, PostgreSQL, pgvector, Docker</p>
     </article>
-    <article class="proj" data-tags="fastapi python postgresql pgvector embeddings vector search ecommerce cross-sell recommendation docker api pydantic openapi ai">
-      <h3>E-commerce cross-sell vector search (POC)</h3>
-      <p>Suggests complementary products from embeddings of titles, descriptions and attributes. FastAPI endpoints return the top-N matches by cosine similarity.</p>
-      <p class="stack">Python, FastAPI, PostgreSQL, pgvector, Docker</p>
+    <article class="proj" data-tags="rag llm vector embeddings pgvector groq semantic search python genai ai">
+      <h3>RAG application (in-house)</h3>
+      <p>A retrieval-augmented generation pipeline that combines vector search with LLM APIs, so answers stay grounded in internal documentation and support content.</p>
+      <p class="stack">Python, pgvector, Groq</p>
     </article>
-    <article class="proj" data-tags="llm prompt engineering few-shot evaluation rouge bertscore python genai ai">
+    <article class="proj" data-tags="sql text-to-sql llm training nl2sql genai ai python">
+      <h3>SQL query generator (in-house)</h3>
+      <p>Worked on training an LLM for an internal system that turns natural-language questions into SQL queries.</p>
+      <p class="stack">Python, LLM training, SQL</p>
+    </article>
+    <article class="proj" data-tags="mcp model context protocol connector llm claude ai assistant project management genai">
+      <h3>MCP connector</h3>
+      <p>A Model Context Protocol connector for an in-house project management system that exposes project and task data to AI assistants.</p>
+      <p class="stack">MCP, LLM integration</p>
+    </article>
+    <article class="proj" data-tags="chatbot openai gpt llm chat history memory query rewriting conversational token optimization prompt evaluation genai ai python">
+      <h3>Software Q&amp;A chatbot</h3>
+      <p>A chatbot on an OpenAI model that answers only software-related questions. It keeps chat history and rewrites follow-up queries so they make sense on their own. Token optimization and prompt evaluation keep it efficient as usage scales.</p>
+      <p class="stack">Python, OpenAI API</p>
+    </article>
+    <article class="proj" data-tags="agentic ai zapier testing automation llm workflow genai">
+      <h3>Agentic web testing app</h3>
+      <p>An agentic workflow for a testing platform: it interprets a user's query and runs the matching tests on the target website.</p>
+      <p class="stack">Zapier, agentic AI</p>
+    </article>
+    <article class="proj" data-tags="scam detection text classification groq llm python genai ai">
+      <h3>Scam detection system</h3>
+      <p>Classifies text messages as Scam, Not Scam or Uncertain using the Groq LLM API.</p>
+      <p class="stack">Python, Groq</p>
+    </article>
+    <article class="proj" data-tags="llm prompt engineering few-shot evaluation rouge bertscore llm-as-judge token optimization python genai ai">
       <h3>Complaint response generator</h3>
-      <p>Drafts customer replies with few-shot prompts. Prompt variants are compared with ROUGE, BERTScore and LLM-as-judge.</p>
+      <p>Drafts customer replies with few-shot prompts. Prompt variants are compared with ROUGE, BERTScore and LLM-as-judge, alongside dataset analysis for token optimization.</p>
       <p class="stack">Python, LLM APIs, Hugging Face</p>
     </article>
-    <article class="proj" data-tags="drupal migration cms php docksal docker legacy modules lms saas">
-      <h3>Drupal 7 to 10 and 11 migrations</h3>
-      <p>Moved a recruitment platform to Drupal 11 and a learning platform to Drupal 10, modernizing 50+ modules each while keeping course and compliance data intact.</p>
+    <article class="proj" data-tags="drupal migration cms php docksal docker legacy modules recruitment saas risesmart">
+      <h3>RiseSmart: Drupal 7 to 11 migration</h3>
+      <p>Led the migration of a live recruitment SaaS platform from Drupal 7 to Drupal 11, modernizing 50+ custom and contrib modules.</p>
       <p class="stack">Drupal, PHP, Docksal</p>
+      <p class="links"><a href="https://cms.risesmart.com" target="_blank" rel="noopener">cms.risesmart.com ↗</a></p>
+    </article>
+    <article class="proj" data-tags="drupal migration cms php docksal docker legacy modules lms learning ethosce">
+      <h3>EthosCE: Drupal 7 to 10 migration</h3>
+      <p>Migrated a production learning management platform to Drupal 10, modernizing 50+ modules while keeping course data and continuing-education compliance records intact.</p>
+      <p class="stack">Drupal, PHP, Docksal</p>
+      <p class="links"><a href="https://gocadmium.com/ethosce" target="_blank" rel="noopener">gocadmium.com/ethosce ↗</a></p>
     </article>
     <article class="proj" data-tags="laravel saas multi-tenant php architecture aws docker api">
-      <h3>Multi-tenant tax workflow platform</h3>
-      <p>A Laravel SaaS for tax-notice and acknowledgement workflows. Each client tenant gets isolated data and secure access.</p>
+      <h3>Taxnomist: multi-tenant tax workflow platform</h3>
+      <p>A Laravel SaaS for tax-notice and acknowledgement workflows, currently serving 2 client tenants. Each tenant gets isolated data and secure access.</p>
       <p class="stack">Laravel, MySQL, Docker</p>
+      <p class="links"><a href="https://taxnomist.wizenglobal.com" target="_blank" rel="noopener">taxnomist.wizenglobal.com ↗</a></p>
     </article>
     <article class="proj" data-tags="react zendesk support ticketing lovable ai saas cost frontend">
-      <h3>Support and ticketing platform</h3>
-      <p>A Zendesk-style helpdesk built from scratch with React, replacing a licensed subscription and its recurring cost.</p>
+      <h3>SBS Texas support and ticketing platform</h3>
+      <p>A Zendesk-equivalent helpdesk built from scratch with React, replacing a licensed subscription and its recurring cost.</p>
       <p class="stack">React, Lovable AI</p>
+      <p class="links"><a href="https://ascent.sbstexas.com" target="_blank" rel="noopener">ascent.sbstexas.com ↗</a> · <a href="https://silveradobusinesssystems.com" target="_blank" rel="noopener">silveradobusinesssystems.com ↗</a></p>
     </article>
   </div>
 </section>
@@ -125,12 +190,16 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
 <section aria-labelledby="skills">
   <h2 id="skills">Skills</h2>
   <dl class="skills">
-    <dt>Generative AI</dt><dd>RAG, embeddings, vector databases (pgvector), semantic search, prompt engineering, LLM APIs (Claude, Groq), Hugging Face, LLM evaluation</dd>
-    <dt>Python and APIs</dt><dd>Python, FastAPI, Pydantic, Node.js, REST API design</dd>
-    <dt>Data</dt><dd>PostgreSQL, MySQL, Redis, Supabase, SQL</dd>
-    <dt>Cloud and DevOps</dt><dd>AWS (EC2, S3, RDS), Docker, Docksal, CI/CD, Git, SonarQube</dd>
-    <dt>Full-stack and CMS</dt><dd>PHP, Laravel, React, JavaScript, Shopify, Drupal 7 to 11, WordPress</dd>
-    <dt>Leadership</dt><dd>Team lead of 5, client-facing delivery, technical roadmapping, mentoring</dd>
+    <dt>Generative AI and LLM</dt><dd>RAG, embeddings, vector databases (pgvector), semantic search, LLM training, text-to-SQL, MCP, agentic AI workflows (Zapier), text classification, prompt engineering (zero-shot, few-shot), LLM APIs (OpenAI, Claude, Groq), chatbots with chat history and query rewriting, Hugging Face, LLM evaluation (ROUGE, BERTScore, LLM-as-judge), token optimization</dd>
+    <dt>Languages</dt><dd>Python, PHP, JavaScript, Node.js, SQL, HTML5, CSS3</dd>
+    <dt>Frameworks</dt><dd>FastAPI, Pydantic, Laravel, React, Drupal 7 to 11, WordPress, jQuery, REST APIs</dd>
+    <dt>E-commerce and CMS</dt><dd>Shopify, Drupal, WordPress: theme, app, plugin and module customization and API integrations</dd>
+    <dt>Databases</dt><dd>PostgreSQL, MySQL, Redis, Supabase, pgvector</dd>
+    <dt>Cloud and DevOps</dt><dd>AWS (EC2, S3, RDS), Docker, Docksal, containerized dev environments, CI/CD, Git, deployment automation</dd>
+    <dt>Code quality</dt><dd>SonarQube, quality gates, code review, static analysis</dd>
+    <dt>Architecture</dt><dd>Multi-tenant SaaS design, REST API design, legacy-to-modern migration, technical roadmapping</dd>
+    <dt>AI-assisted development</dt><dd>Claude, GitHub Copilot, Hugging Face, Lovable AI</dd>
+    <dt>Leadership</dt><dd>Team lead and mentor for 5 engineers, client-facing delivery, Agile delivery</dd>
   </dl>
 </section>
 
@@ -140,17 +209,34 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
     <h3>Tech Lead / Software Engineer, Busywizzy Technology Pvt. Ltd.</h3>
     <p class="when">Jun 2016 to present</p>
     <ul>
-      <li>Lead and mentor 5 engineers across Drupal, WordPress, Laravel, Shopify, Node.js and React projects.</li>
-      <li>Directed two legacy-to-modern CMS migrations with zero data loss and no extended downtime.</li>
-      <li>Built FastAPI services and GenAI proofs of concept: RAG, embeddings and evaluation.</li>
-      <li>Set up AWS deployments, Docker environments, CI/CD pipelines and SonarQube quality gates.</li>
+      <li>Lead and mentor 5 engineers across Drupal, WordPress, Laravel, Shopify, Node.js and React projects for enterprise and product clients.</li>
+      <li>Directed two legacy-to-modern CMS migrations (Drupal 7 to 11 and Drupal 7 to 10, 50+ modules each) with zero data loss and no extended downtime.</li>
+      <li>Architected a multi-tenant Laravel SaaS and led a React helpdesk that replaced a licensed Zendesk subscription.</li>
+      <li>Built Shopify storefronts (Liquid themes, app and API integrations) and Node.js services and REST APIs.</li>
+      <li>Built in-house GenAI projects with Python and FastAPI: RAG, pgvector semantic search, few-shot prompting and LLM evaluation.</li>
+      <li>Introduced AI-assisted development (Claude, GitHub Copilot, Hugging Face) across the team.</li>
+      <li>Set up AWS deployments, Docker and Docksal environments, CI/CD pipelines and SonarQube quality gates.</li>
     </ul>
   </div>
   <div class="job" style="margin-top:1.25rem">
     <h3>SEO/SMO Executive, Webart Solution Pvt. Ltd.</h3>
     <p class="when">Mar 2013 to Jul 2015</p>
+    <ul>
+      <li>Built foundational web and digital-marketing skills before moving into software engineering.</li>
+    </ul>
   </div>
-  <p style="margin-top:1.25rem"><strong>Education:</strong> M.Tech Computer Science (2015) and B.Tech Computer Science (2013), Maharishi Dayanand University.</p>
+</section>
+
+<section aria-labelledby="edu">
+  <h2 id="edu">Education</h2>
+  <div class="job">
+    <h3>M.Tech, Computer Science</h3>
+    <p class="when">Maharishi Dayanand University, 2015. Score: 77%</p>
+  </div>
+  <div class="job" style="margin-top:1.25rem">
+    <h3>B.Tech, Computer Science</h3>
+    <p class="when">Maharishi Dayanand University, 2013. Score: 79%</p>
+  </div>
 </section>
 
 <footer id="contact">
