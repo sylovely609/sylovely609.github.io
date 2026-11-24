@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sushma Yadav | Tech Lead | Full-Stack | Python & GenAI Engineer</title>
-<meta name="description" content="Tech Lead and Generative AI engineer with 10 years in software engineering. Builds RAG, text-to-SQL, MCP and vector-search apps with Python, FastAPI and PostgreSQL. Gurugram, India.">
+<title>Sushma Yadav | Tech Lead | Full-Stack | GenAI Engineer</title>
+<meta name="description" content="Tech Lead and Generative AI engineer with 10 years in software engineering. Builds agentic AI, MCP, RAG, text-to-SQL and vector-search apps with Python, FastAPI, LangChain, LangGraph and PostgreSQL. Gurugram, India.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -60,6 +60,7 @@ dl.skills dt{font-weight:600}
 dl.skills dd{margin:0;color:var(--muted)}
 .job h3{font:800 1.15rem/1.3 var(--display);margin:0}
 .job .when{color:var(--muted);margin:0 0 .6rem}
+.job h4{font:600 1rem/1.3 var(--display);color:var(--accent);margin:1rem 0 .4rem}
 .job ul{margin:0;padding-left:1.2rem}
 .job li{margin-bottom:.35rem}
 footer{padding:2rem 0 3rem;color:var(--muted)}
@@ -72,6 +73,7 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
   <div class="wrap">
     <a class="name" href="#top">Sushma Yadav</a>
     <ul>
+      <li><a href="#highlights">Highlights</a></li>
       <li><a href="#work">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#exp">Experience</a></li>
@@ -87,10 +89,10 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
     <img src="sushma.jpg" alt="Portrait of Sushma Yadav" width="180" height="180">
     <div>
       <h1>Sushma Yadav</h1>
-      <p class="role">Tech Lead | Full-Stack | Python &amp; GenAI Engineer</p>
+      <p class="role">Tech Lead | Full-Stack | GenAI Engineer</p>
     </div>
   </div>
-  <p class="lead">I build RAG, chatbots, text-to-SQL, MCP and vector-search apps with Python, FastAPI and PostgreSQL, backed by 10 years of software engineering.</p>
+  <p class="lead">I build agentic AI workflows, MCP connectors, RAG, text-to-SQL and vector-search apps with Python, FastAPI, LangChain and LangGraph, backed by 10 years of software engineering.</p>
   <div class="btns">
     <a class="btn primary" href="Sushma_Yadav_CV.pdf" download>Download CV</a>
     <a class="btn" href="https://www.linkedin.com/in/sushma-yadav/">LinkedIn</a>
@@ -101,17 +103,31 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
     <li><b>10 years</b>in software engineering</li>
     <li><b>Team of 5</b>engineers led</li>
     <li><b>100+ modules</b>migrated, zero data loss</li>
-    <li><b>1+ year</b>of hands-on GenAI</li>
+    <li><b>2 platforms</b>replaced Zendesk and Zoho People</li>
   </ul>
 </header>
+
+<section aria-labelledby="highlights">
+  <h2 id="highlights">Key highlights</h2>
+  <div class="job">
+    <ul>
+      <li><b>Agentic AI:</b> tool-calling agents built with LangChain and LangGraph that orchestrate Zapier automation tools, including an agentic web testing application.</li>
+      <li><b>MCP:</b> built a Model Context Protocol connector that exposes an internal project-management system's data to AI assistants.</li>
+      <li><b>Workflow automation:</b> n8n workflows with webhooks, third-party API integrations, data transformations and AI services connected to business applications.</li>
+      <li><b>RAG and retrieval:</b> RAG pipelines, pgvector semantic search, RAG-based text-to-SQL and an in-house FastAPI cross-sell vector-search platform.</li>
+      <li><b>LLM evaluation:</b> prompt variants scored with ROUGE, BERTScore and LLM-as-judge; token-usage optimization.</li>
+      <li><b>Engineering leadership:</b> Tech Lead of 5 engineers; 2 Drupal migrations (100+ modules, zero data loss); multi-tenant Laravel SaaS; internal platforms that replaced Zendesk and Zoho People (with payroll).</li>
+    </ul>
+  </div>
+</section>
 
 <section aria-labelledby="find">
   <h2 id="find">Search my work</h2>
   <div class="finder">
     <label for="q">What are you hiring for?</label>
-    <input id="q" type="search" placeholder="Try: RAG, MCP, text-to-SQL, FastAPI, Drupal" autocomplete="off">
+    <input id="q" type="search" placeholder="Try: agentic, LangGraph, MCP, RAG, n8n, FastAPI, Drupal" autocomplete="off">
     <div class="chips" aria-label="Quick searches">
-      <button type="button">RAG</button><button type="button">chatbot</button><button type="button">MCP</button><button type="button">text-to-SQL</button><button type="button">FastAPI</button><button type="button">Drupal</button><button type="button">multi-tenant</button>
+      <button type="button">agentic</button><button type="button">LangGraph</button><button type="button">n8n</button><button type="button">RAG</button><button type="button">chatbot</button><button type="button">MCP</button><button type="button">text-to-SQL</button><button type="button">FastAPI</button><button type="button">Drupal</button><button type="button">multi-tenant</button>
     </div>
     <p id="status" aria-live="polite">Type a skill and the matching projects below move to the front.</p>
   </div>
@@ -120,35 +136,40 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
 <section aria-labelledby="work">
   <h2 id="work">Selected projects</h2>
   <div class="projects" id="projects">
+    <article class="proj" data-tags="agentic ai agents tool calling function calling langchain langgraph zapier testing automation llm workflow genai python">
+      <h3>Agentic web testing application</h3>
+      <p>An agentic workflow for a testing platform built with LangChain and LangGraph. It interprets the user's query, calls Zapier automation tools through tool calling and performs the corresponding tests on the target website.</p>
+      <p class="stack">Python, LangChain, LangGraph, Zapier</p>
+    </article>
+    <article class="proj" data-tags="mcp model context protocol connector llm claude ai assistant project management agentic genai">
+      <h3>MCP connector (in-house)</h3>
+      <p>A Model Context Protocol connector that gives AI assistants access to project and task data in an internal project management system.</p>
+      <p class="stack">MCP, LLM integration</p>
+    </article>
     <article class="proj" data-tags="fastapi python postgresql pgvector embeddings vector search ecommerce cross-sell recommendation docker api pydantic openapi swagger ann ai genai">
       <h3>E-commerce cross-sell vector search (in-house)</h3>
-      <p>Suggests complementary products using semantic search instead of keyword or rule matching. Embeddings of titles, descriptions and attributes live in pgvector, and FastAPI endpoints return the top-N matches by cosine similarity with approximate nearest-neighbour indexing.</p>
-      <p class="stack">Python, FastAPI, Pydantic, PostgreSQL, pgvector, Docker</p>
+      <p>Suggests complementary products using semantic vector search instead of keyword or manual rule matching. Embeddings of product titles, descriptions and attributes live in pgvector, and FastAPI endpoints handle ingestion, embedding generation and top-N retrieval by cosine similarity with approximate nearest-neighbour indexing. Pydantic models, Swagger docs and Docker round it out.</p>
+      <p class="stack">Python, FastAPI, Pydantic, PostgreSQL, pgvector, Embeddings, Docker</p>
+    </article>
+    <article class="proj" data-tags="n8n workflow automation webhooks api integration data transformation ai zapier">
+      <h3>n8n workflow automation (self-practice)</h3>
+      <p>Automated workflows that integrate third-party APIs, handle webhooks, transform data and connect AI services with business applications to streamline repetitive processes.</p>
+      <p class="stack">n8n, webhooks, REST APIs, LLM APIs</p>
     </article>
     <article class="proj" data-tags="rag llm vector embeddings pgvector groq semantic search python genai ai">
       <h3>RAG application (in-house)</h3>
-      <p>A retrieval-augmented generation pipeline that combines vector search with LLM APIs, so answers stay grounded in internal documentation and support content.</p>
-      <p class="stack">Python, pgvector, Groq</p>
+      <p>A retrieval-augmented generation pipeline that combines pgvector search with LLM APIs (Groq), so answers stay grounded in internal documentation and support content.</p>
+      <p class="stack">Python, PostgreSQL, pgvector, Groq</p>
     </article>
-    <article class="proj" data-tags="sql text-to-sql llm training nl2sql genai ai python">
+    <article class="proj" data-tags="sql text-to-sql rag llm nl2sql genai ai python">
       <h3>SQL query generator (in-house)</h3>
-      <p>Worked on training an LLM for an internal system that turns natural-language questions into SQL queries.</p>
-      <p class="stack">Python, LLM training, SQL</p>
-    </article>
-    <article class="proj" data-tags="mcp model context protocol connector llm claude ai assistant project management genai">
-      <h3>MCP connector</h3>
-      <p>A Model Context Protocol connector for an in-house project management system that exposes project and task data to AI assistants.</p>
-      <p class="stack">MCP, LLM integration</p>
+      <p>A text-to-SQL system for an internal application that uses RAG with an LLM to generate SQL queries from natural-language questions.</p>
+      <p class="stack">Python, RAG, LLM, SQL</p>
     </article>
     <article class="proj" data-tags="chatbot openai gpt llm chat history memory query rewriting conversational token optimization prompt evaluation genai ai python">
       <h3>Software Q&amp;A chatbot</h3>
-      <p>A chatbot on an OpenAI model that answers only software-related questions. It keeps chat history and rewrites follow-up queries so they make sense on their own. Token optimization and prompt evaluation keep it efficient as usage scales.</p>
+      <p>A chatbot on an OpenAI model that answers only software-related questions. It manages chat history and uses query rewriting to resolve follow-up questions, with token optimization and prompt evaluation.</p>
       <p class="stack">Python, OpenAI API</p>
-    </article>
-    <article class="proj" data-tags="agentic ai zapier testing automation llm workflow genai">
-      <h3>Agentic web testing app</h3>
-      <p>An agentic workflow for a testing platform: it interprets a user's query and runs the matching tests on the target website.</p>
-      <p class="stack">Zapier, agentic AI</p>
     </article>
     <article class="proj" data-tags="scam detection text classification groq llm python genai ai">
       <h3>Scam detection system</h3>
@@ -160,9 +181,14 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
       <p>Drafts customer replies with few-shot prompts. Prompt variants are compared with ROUGE, BERTScore and LLM-as-judge, alongside dataset analysis for token optimization.</p>
       <p class="stack">Python, LLM APIs, Hugging Face</p>
     </article>
+    <article class="proj" data-tags="laravel php hr payroll people management zoho internal platform cost">
+      <h3>Internal people management system</h3>
+      <p>An in-house HR and payroll platform built in Laravel as a replacement for Zoho People, eliminating recurring third-party subscription costs.</p>
+      <p class="stack">Laravel, PHP</p>
+    </article>
     <article class="proj" data-tags="drupal migration cms php docksal docker legacy modules recruitment saas risesmart">
       <h3>RiseSmart: Drupal 7 to 11 migration</h3>
-      <p>Led the migration of a live recruitment SaaS platform from Drupal 7 to Drupal 11, modernizing 50+ custom and contrib modules.</p>
+      <p>Led the migration of a live recruitment SaaS platform from Drupal 7 to Drupal 11, modernizing 50+ custom and contrib modules, with development and testing in a Docksal (Docker) environment.</p>
       <p class="stack">Drupal, PHP, Docksal</p>
       <p class="links"><a href="https://cms.risesmart.com" target="_blank" rel="noopener">cms.risesmart.com ↗</a></p>
     </article>
@@ -174,7 +200,7 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
     </article>
     <article class="proj" data-tags="laravel saas multi-tenant php architecture aws docker api">
       <h3>Taxnomist: multi-tenant tax workflow platform</h3>
-      <p>A Laravel SaaS for tax-notice and acknowledgement workflows, currently serving 2 client tenants. Each tenant gets isolated data and secure access.</p>
+      <p>A multi-tenant Laravel SaaS for tax-notice and acknowledgement workflows, currently serving 2 client tenants with tenant-isolated client data and secure access controls. The project setup is containerized with Docker.</p>
       <p class="stack">Laravel, MySQL, Docker</p>
       <p class="links"><a href="https://taxnomist.wizenglobal.com" target="_blank" rel="noopener">taxnomist.wizenglobal.com ↗</a></p>
     </article>
@@ -190,7 +216,10 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
 <section aria-labelledby="skills">
   <h2 id="skills">Skills</h2>
   <dl class="skills">
-    <dt>Generative AI and LLM</dt><dd>RAG, embeddings, vector databases (pgvector), semantic search, LLM training, text-to-SQL, MCP, agentic AI workflows (Zapier), text classification, prompt engineering (zero-shot, few-shot), LLM APIs (OpenAI, Claude, Groq), chatbots with chat history and query rewriting, Hugging Face, LLM evaluation (ROUGE, BERTScore, LLM-as-judge), token optimization</dd>
+    <dt>Agentic AI</dt><dd>AI agents, tool / function calling, LangChain, LangGraph, MCP (Model Context Protocol), multi-step agentic workflows, conversational memory, query rewriting</dd>
+    <dt>Workflow automation</dt><dd>n8n (workflow design, webhooks, third-party API integrations, data transformations, AI service integration), Zapier</dd>
+    <dt>Generative AI and LLM</dt><dd>RAG, embeddings, vector databases (pgvector), semantic search, text-to-SQL (RAG-based), prompt engineering (zero-shot, few-shot), text classification, LLM APIs (Claude, OpenAI, Groq), Hugging Face, token optimization</dd>
+    <dt>LLM evaluation</dt><dd>ROUGE, BERTScore, LLM-as-judge, prompt variant comparison</dd>
     <dt>Languages</dt><dd>Python, PHP, JavaScript, Node.js, SQL, HTML5, CSS3</dd>
     <dt>Frameworks</dt><dd>FastAPI, Pydantic, Laravel, React, Drupal 7 to 11, WordPress, jQuery, REST APIs</dd>
     <dt>E-commerce and CMS</dt><dd>Shopify, Drupal, WordPress: theme, app, plugin and module customization and API integrations</dd>
@@ -208,14 +237,34 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
   <div class="job">
     <h3>Tech Lead / Software Engineer, Busywizzy Technology Pvt. Ltd.</h3>
     <p class="when">Jun 2016 to present</p>
+    <h4>Agentic AI and Generative AI</h4>
     <ul>
-      <li>Lead and mentor 5 engineers across Drupal, WordPress, Laravel, Shopify, Node.js and React projects for enterprise and product clients.</li>
-      <li>Directed two legacy-to-modern CMS migrations (Drupal 7 to 11 and Drupal 7 to 10, 50+ modules each) with zero data loss and no extended downtime.</li>
-      <li>Architected a multi-tenant Laravel SaaS and led a React helpdesk that replaced a licensed Zendesk subscription.</li>
-      <li>Built Shopify storefronts (Liquid themes, app and API integrations) and Node.js services and REST APIs.</li>
-      <li>Built in-house GenAI projects with Python and FastAPI: RAG, pgvector semantic search, few-shot prompting and LLM evaluation.</li>
-      <li>Introduced AI-assisted development (Claude, GitHub Copilot, Hugging Face) across the team.</li>
-      <li>Set up AWS deployments, Docker and Docksal environments, CI/CD pipelines and SonarQube quality gates.</li>
+      <li>Built agentic AI workflows with LangChain and LangGraph that use tool calling to invoke Zapier automation tools, including an agentic web testing application that interprets a user's query and performs the corresponding tests on the target website.</li>
+      <li>Built a Model Context Protocol (MCP) connector for an in-house project management system, exposing project and task data to AI assistants.</li>
+      <li>Developed embedding-based semantic search and RAG workflows using PostgreSQL with pgvector and LLM APIs (Groq) to answer questions over project documentation and support content.</li>
+      <li>Built a text-to-SQL system for an internal application using RAG with an LLM to generate SQL queries from natural-language questions.</li>
+      <li>Built LLM applications (OpenAI chatbot with chat memory and query rewriting, Groq scam classifier, few-shot complaint-response generator) and evaluated prompt variants with ROUGE, BERTScore and LLM-as-judge; analyzed datasets for token optimization.</li>
+    </ul>
+    <h4>Python and backend</h4>
+    <ul>
+      <li>Developed Python REST APIs with FastAPI (Pydantic validation, auto-generated OpenAPI docs) for in-house AI and vector-search projects.</li>
+      <li>Designed PostgreSQL and MySQL schemas and optimized queries; used Redis and Supabase in new projects.</li>
+      <li>Introduced AI-assisted development (Claude, GitHub Copilot, Hugging Face) across the team to speed up delivery and improve code quality.</li>
+    </ul>
+    <h4>Leadership, architecture and delivery</h4>
+    <ul>
+      <li>Lead and mentor a team of 5 engineers delivering Drupal, WordPress, Laravel, Shopify, Node.js and React projects for enterprise and product-based clients.</li>
+      <li>Directed two legacy-to-modern CMS migrations (Drupal 7 to Drupal 11 and Drupal 7 to Drupal 10), each covering 50+ custom and contrib modules, with zero data loss and no extended downtime.</li>
+      <li>Architected a multi-tenant Laravel SaaS platform for tax-notice workflow management with tenant-isolated data and secure access controls.</li>
+      <li>Led development of a custom React-based support and ticketing platform (Lovable AI-assisted) that replaced a licensed Zendesk subscription and cut recurring software costs.</li>
+      <li>Built an internal Laravel-based people management system with payroll features that replaced Zoho People, removing a recurring third-party subscription.</li>
+    </ul>
+    <h4>Full-stack, cloud and DevOps</h4>
+    <ul>
+      <li>Built and customized Shopify storefronts (Liquid themes, third-party app and Shopify API integrations); built Node.js services and REST APIs connecting front-end applications, third-party tools and backend platforms.</li>
+      <li>Deployed and operated applications on AWS (EC2, S3, RDS), covering environment setup, file storage and managed database hosting.</li>
+      <li>Set up Docker and Docksal-based containerized development environments for Drupal, WordPress and Laravel projects, matching staging and production.</li>
+      <li>Set up and maintained CI/CD pipelines to automate build, test and deployment, and integrated SonarQube quality gates to track bugs, code smells and security hotspots.</li>
     </ul>
   </div>
   <div class="job" style="margin-top:1.25rem">
@@ -223,6 +272,15 @@ footer{padding:2rem 0 3rem;color:var(--muted)}
     <p class="when">Mar 2013 to Jul 2015</p>
     <ul>
       <li>Built foundational web and digital-marketing skills before moving into software engineering.</li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="training">
+  <h2 id="training">Training</h2>
+  <div class="job">
+    <ul>
+      <li><b>n8n Workflow Automation Workshop</b> (attended), followed by hands-on practice building workflows with webhooks, API integrations and AI services.</li>
     </ul>
   </div>
 </section>
